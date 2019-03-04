@@ -11,6 +11,9 @@ public class Main {
         }
         int count = 0;
         for (int i = 2; i <= n + 1; i++) {
+//            if (b[i]<0 && b[i-1]<0 && b[i-2]<0 && b[i]<b[i-1]) {
+//                count += b[i - 2];
+//            } else
             if (b[i - 2] >= b[i - 1] || (b[i - 2] >= 0 && b[i - 1]>=0)) {
                 count += b[i - 2];
             } else {

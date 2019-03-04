@@ -10,14 +10,13 @@ public class Main {
             b[i] = a[i - 1];
         }
         int count = 0;
-        if (n == 2 && a[0]<0) return count;
-        if (n==2) return a[0] + a[1] > a[1] ?a[1] + a[0] :a[0];
-        for (int i = 2; i < n; i++) {
-            if (count + b[i - 1] < count + b[i]) {
-                count += b[i];
-                i++;
-            } else
+        for (int i = 2; i <= n; i++) {
+            if (b[i - 2] > b[i - 1]) {
+                count += b[i - 2];
+            } else {
                 count += b[i - 1];
+                i++;
+            }
         }
         return count + b[n];
     }

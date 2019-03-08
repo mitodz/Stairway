@@ -26,16 +26,16 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int[] a = new int[n];
-        for (int i = 0; i < n; i++) {
-            a[i] = scanner.nextInt();
-        }
-        System.out.println(getSumStairs(a));
+//        Scanner scanner = new Scanner(System.in);
+//        int n = scanner.nextInt();
+//        int[] a = new int[n];
+//        for (int i = 0; i < n; i++) {
+//            a[i] = scanner.nextInt();
+//        }
+//        System.out.println(getSumStairs(a));
 //        System.out.println(getSumStairs(new int[]{2,-1,-1}));//1
 //        System.out.println(getSumStairs(new int[]{-100,-1000}));//-1000
-//        System.out.println(getSumStairs(new int[]{-5, -10, -100, -100, -100}));//-205
+        System.out.println(getSumStairs(new int[]{-5, -10, -100, -100, -100}));//-205
 ////        System.out.println(getSumStairs(new int[]{-1,-1,-1}));//-2
 ////        System.out.println(getSumStairs(new int[]{0,0,0,4,6,-5}));//5
 ////        System.out.println(getSumStairs(new int[]{-64,-16,-13,-9,-48}));//-73
@@ -44,7 +44,7 @@ public class Main {
 ////        System.out.println(getSumStairs(new int[]{1,1,-2,-4,-6,2,2}));//2
 ////        System.out.println(getSumStairs(new int[]{-5, 8, 10, 7, -2, 4}));//29
 //        //System.out.println();
-//        System.out.println(getSumStairs(new int[]{-2, -4, -5, 0, 0}));//-4 не работает
+        System.out.println(getSumStairs(new int[]{-2, -4, -5, 0, 0}));//-4 не работает
 //        System.out.println(getSumStairs(new int[]{-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2}));//-12
 
 

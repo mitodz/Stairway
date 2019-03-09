@@ -11,7 +11,7 @@ public class Main {
             b[i] = a[i-1];
         }
         for (int i = 2; i <= n + 1; i++) {
-            if (b[i]<=0 && b[i-1]<=0 && b[i-2]<=0 && b[i] + b[i-2]<b[i-1]) {
+            if (b[i]<0 && b[i-1]<0 && b[i-2]<0 && b[i] + b[i-2]<b[i-1] && (b[i] + b[i-2] <= b[i-1]+b[i+1])) {
                 count += b[i - 1];
                 i++;
             } else
@@ -33,19 +33,19 @@ public class Main {
 //            a[i] = scanner.nextInt();
 //        }
 //        System.out.println(getSumStairs(a));
-//        System.out.println(getSumStairs(new int[]{2,-1,-1}));//1
-//        System.out.println(getSumStairs(new int[]{-100,-1000}));//-1000
+        System.out.println(getSumStairs(new int[]{2,-1,-1}));//1
+        System.out.println(getSumStairs(new int[]{-100,-1000}));//-1000
         System.out.println(getSumStairs(new int[]{-5, -10, -100, -100, -100}));//-205
-////        System.out.println(getSumStairs(new int[]{-1,-1,-1}));//-2
-////        System.out.println(getSumStairs(new int[]{0,0,0,4,6,-5}));//5
-////        System.out.println(getSumStairs(new int[]{-64,-16,-13,-9,-48}));//-73
-////        System.out.println(getSumStairs(new int[]{3,4,10,10,0,-6,-10,0}));//21
-////        System.out.println(getSumStairs(new int[]{-2,-16,-13,-9,-48}));//-63
-////        System.out.println(getSumStairs(new int[]{1,1,-2,-4,-6,2,2}));//2
-////        System.out.println(getSumStairs(new int[]{-5, 8, 10, 7, -2, 4}));//29
-//        //System.out.println();
-        System.out.println(getSumStairs(new int[]{-2, -4, -5, 0, 0}));//-4 не работает
-//        System.out.println(getSumStairs(new int[]{-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2}));//-12
+        System.out.println(getSumStairs(new int[]{-1,-1,-1}));//-2
+        System.out.println(getSumStairs(new int[]{0,0,0,4,6,-5}));//5
+        System.out.println(getSumStairs(new int[]{-64,-16,-13,-9,-48}));//-73
+        System.out.println(getSumStairs(new int[]{3,4,10,10,0,-6,-10,0}));//21
+        System.out.println(getSumStairs(new int[]{-2,-16,-13,-9,-48}));//-63
+        System.out.println(getSumStairs(new int[]{1,1,-2,-4,-6,2,2}));//2
+        System.out.println(getSumStairs(new int[]{-5, 8, 10, 7, -2, 4}));//29
+        System.out.println();
+        System.out.println(getSumStairs(new int[]{-2, -4, -5, 0, 0}));//-4
+        System.out.println(getSumStairs(new int[]{-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2}));//-12
 
 
     }
